@@ -12,6 +12,18 @@ const stopBtn = document.getElementById("stopBtn");
 const resetBtn = document.getElementById("resetBtn");
 const csvBtn = document.getElementById("csvBtn");
 
+function haptic(durationMs = 15) {
+    if (typeof navigator !== "undefined" && typeof navigator.vibrate === "function") {
+        navigator.vibrate(durationMs);
+    }
+}
+
+startBtn.addEventListener("pointerdown", () => haptic());
+lapBtn.addEventListener("pointerdown", () => haptic());
+stopBtn.addEventListener("pointerdown", () => haptic());
+resetBtn.addEventListener("pointerdown", () => haptic());
+csvBtn.addEventListener("pointerdown", () => haptic());
+
 startBtn.addEventListener("click", start);
 lapBtn.addEventListener("click", lap);
 stopBtn.addEventListener("click", stop);
@@ -73,12 +85,12 @@ function lap() {
     
 function displayLaps() {
     const laps = document.getElementById("laps");
-    laps.innerHTML = "";
-    let counter = 1;
-    for (const time of lapTimes) {
-        laps.innerHTML += `<div>${counter}: ${formatTime(time)}</div>`;
-        counter++;
+    const rows = [];
+    for (let i = lapTimes.length - 1; i >= 0; i--) {
+        rows.push(`<div>${i + 1}: ${formatTime(lapTimes[i])}</div>`);
     }
+    laps.innerHTML = rows.join("");
+    laps.scrollTop = 0;
 }
     
 function stop() {
