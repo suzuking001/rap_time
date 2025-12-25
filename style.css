@@ -48,3 +48,11 @@ button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+#lapBtn {
+  font-size: 28px;
+  padding: 18px 48px;
+  min-height: 64px;
+  width: 90vw;
+  max-width: 420px;
+}
