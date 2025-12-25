@@ -8,8 +8,16 @@
 </head>
 <body>
     <div id="container">
-        <div id="totalTime">00:00:00.00</div>
-        <div id="currentLap">00:00:00.00</div>
+        <div class="time-grid">
+            <div class="time-card">
+                <div class="time-label">TOTAL</div>
+                <div id="totalTime">00:00:00.00</div>
+            </div>
+            <div class="time-card">
+                <div class="time-label">LAP</div>
+                <div id="currentLap">00:00:00.00</div>
+            </div>
+        </div>
 
         <div class="buttons">
             <button id="startBtn">スタート</button>
@@ -19,6 +27,7 @@
         </div>
 
         <button id="lapBtn" disabled>ラップ</button>
+        <div class="section-title">LAPS</div>
         <div id="laps"></div>
     </div>
     <script src="script.js"></script>
