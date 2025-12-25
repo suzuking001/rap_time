@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ストップウォッチ</title>
+</head>
+<body>
+    <div id="container">
+        <div id="totalTime">00:00:00.00</div>
+        <div id="currentLap">00:00:00.00</div>
+
+        <div class="buttons">
+            <button id="startBtn">スタート</button>
+            <button id="stopBtn" disabled>ストップ</button>
+            <button id="resetBtn" disabled>リセット</button>
+            <button id="csvBtn" disabled>CSV出力</button>
+        </div>
+
+        <button id="lapBtn" disabled>ラップ</button>
+        <div id="laps"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

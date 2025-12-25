@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>繧ｹ繝医ャ繝励え繧ｩ繝・メ</title>
+</head>
+<body>
+    <div id="container">
+        <div id="totalTime">00:00:00.00</div>
+        <div id="currentLap">00:00:00.00</div>
+
+        <div class="buttons">
+            <button id="startBtn">繧ｹ繧ｿ繝ｼ繝・/button>
+            <button id="stopBtn" disabled>繧ｹ繝医ャ繝・/button>
+            <button id="resetBtn" disabled>繝ｪ繧ｻ繝・ヨ</button>
+            <button id="csvBtn" disabled>CSV蜃ｺ蜉・/button>
+        </div>
+
+        <button id="lapBtn" disabled>繝ｩ繝・・</button>
+        <div id="laps"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
