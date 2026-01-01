@@ -9,7 +9,7 @@
 
 ## 使い方
 
-1. `https://suzuking001.github.io/rap_time/` をブラウザで開きます
+1. https://suzuking001.github.io/rap_time/ をブラウザで開きます
 2. `スタート` で計測開始
 3. `ラップ` でラップを記録（現在ラップが 0 に戻ります）
 4. `ストップ` で停止
@@ -64,3 +64,4 @@ Lap,Time
 ## ライセンス
 
 MIT
+
