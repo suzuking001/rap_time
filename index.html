@@ -1,35 +1,194 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
+
+
 <html lang="ja">
+
+
+
 <head>
+
+
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+
+
+
+    <link rel="apple-touch-icon" href="assets/icon.svg">
+
+
+
     <title>ストップウォッチ</title>
+
+
+
 </head>
+
+
+
 <body>
+
+
+
     <div id="container">
-        <div class="time-grid">
-            <div class="time-card">
-                <div class="time-label">TOTAL</div>
-                <div id="totalTime">00:00:00.00</div>
-            </div>
-            <div class="time-card">
-                <div class="time-label">LAP</div>
-                <div id="currentLap">00:00:00.00</div>
-            </div>
+
+        <div class="top-actions">
+
+            <button id="helpBtn" class="help-btn" type="button">使い方</button>
+
         </div>
+
+
+
+        <div class="time-grid">
+
+
+
+            <div class="time-card">
+
+
+
+                <div class="time-label">TOTAL</div>
+
+
+
+                <div id="totalTime">00:00:00.00</div>
+
+
+
+            </div>
+
+
+
+            <div class="time-card">
+
+
+
+                <div class="time-label">LAP</div>
+
+
+
+                <div id="currentLap">00:00:00.00</div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
 
         <div class="buttons">
+
+
+
             <button id="startBtn">スタート</button>
+
+
+
             <button id="stopBtn" disabled>ストップ</button>
+
+
+
             <button id="resetBtn" disabled>リセット</button>
+
+
+
             <button id="csvBtn" disabled>CSV出力</button>
+
+
+
+
+
         </div>
 
+
+
+
+
+
+
         <button id="lapBtn" disabled>ラップ</button>
+
+
+
         <div class="section-title">LAPS</div>
+
+
+
         <div id="laps"></div>
+
+
+
     </div>
-    <script src="script.js"></script>
+
+
+
+    <div id="helpModal" class="modal" aria-hidden="true">
+        <div id="helpBackdrop" class="modal-backdrop" aria-hidden="true"></div>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+            <div class="modal-header">
+                <div id="helpTitle" class="modal-title">ホーム画面に追加</div>
+                <button id="helpCloseBtn" class="modal-close" type="button" aria-label="閉じる">?</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <div class="modal-label">iPhone（Safari）</div>
+                    <ol>
+                        <li>Safari で <strong>index.html</strong> を開く</li>
+                        <li>共有ボタン →「ホーム画面に追加」</li>
+                        <li>追加後はホーム画面のアイコンから起動</li>
+                    </ol>
+                </div>
+                <div class="modal-section">
+                    <div class="modal-label">Android（Chrome）</div>
+                    <ol>
+                        <li>Chrome で <strong>index.html</strong> を開く</li>
+                        <li>右上メニュー →「ホーム画面に追加」または「アプリをインストール」</li>
+                        <li>追加後はホーム画面のアイコンから起動</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+
+
 </body>
+
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
