@@ -150,11 +150,11 @@ button:disabled {
 #laps {
   text-align: center;
   width: 100%;
-  max-height: 48vh;
+  max-height: 56vh;
   overflow-y: auto;
-  padding: 8px;
+  padding: 6px;
   display: grid;
-  gap: 10px;
+  gap: 6px;
   background: #ffffff80;
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -163,17 +163,18 @@ button:disabled {
 #laps .lap-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 8px;
   background: #ffffff;
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 10px 12px;
-  font-size: clamp(20px, 5.2vw, 26px);
+  border-radius: 10px;
+  padding: 6px 8px;
+  font-size: clamp(16px, 4.4vw, 22px);
   font-variant-numeric: tabular-nums;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   animation: fadeInUp 0.25s ease;
 }
+
 
 #laps .lap-row:nth-child(odd) {
   background: #fff7ef;
@@ -186,15 +187,21 @@ button:disabled {
 }
 
 #laps .lap-index {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.14em;
   color: var(--muted);
 }
 
+#laps .lap-total {
+  font-size: 0.85em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 #laps .lap-time {
   font-family: "Share Tech Mono", "Zen Kaku Gothic New", sans-serif;
-  font-size: 1.15em;
+  font-size: 1.05em;
   letter-spacing: 0.02em;
 }
 
@@ -285,14 +292,16 @@ body.modal-open {
 }
 
 .modal-close {
-  width: 36px;
-  height: 36px;
+  width: auto;
+  height: auto;
   border-radius: 10px;
   border: 1px solid var(--border);
   background: #ffffff;
   color: var(--text);
-  font-size: 20px;
-  line-height: 1;
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 6px 10px;
+  font-weight: 600;
   box-shadow: none;
 }
 
@@ -323,6 +332,12 @@ body.modal-open {
 
 .modal-body li {
   margin: 6px 0;
+}
+
+
+
+#helpCloseBtn {
+  min-width: 64px;
 }
 
 
