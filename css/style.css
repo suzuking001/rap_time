@@ -217,24 +217,6 @@ button:disabled {
 }
 
 
-@media (max-width: 640px) {
-  body {
-    padding: 8px 0 16px;
-  }
-
-  #container {
-    width: 100%;
-    border-radius: 0;
-  }
-
-  .buttons {
-    grid-template-columns: 1fr;
-  }
-
-  .buttons button {
-    width: 100%;
-  }
-}
 
 @media (min-width: 640px) {
   .buttons {
