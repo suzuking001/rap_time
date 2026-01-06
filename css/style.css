@@ -216,6 +216,26 @@ button:disabled {
   }
 }
 
+
+@media (max-width: 640px) {
+  body {
+    padding: 8px 0 16px;
+  }
+
+  #container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}
+
 @media (min-width: 640px) {
   .buttons {
     grid-template-columns: repeat(4, minmax(120px, 1fr));
@@ -323,6 +343,16 @@ body.modal-open {
   letter-spacing: 0.14em;
   color: var(--muted);
   margin-bottom: 6px;
+}
+
+.modal-list {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
+.modal-list li {
+  margin: 6px 0;
 }
 
 .modal-body ol {
