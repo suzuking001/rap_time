@@ -64,6 +64,12 @@ const helpCloseBtn = document.getElementById("helpCloseBtn");
 
 const helpBackdrop = document.getElementById("helpBackdrop");
 
+let hapticsEnabled = false;
+
+document.addEventListener("pointerdown", () => {
+    hapticsEnabled = true;
+}, { once: true });
+
 
 
 
@@ -71,13 +77,12 @@ const helpBackdrop = document.getElementById("helpBackdrop");
 
 
 function haptic(durationMs = 15) {
-
-    if (typeof navigator !== "undefined" && typeof navigator.vibrate === "function") {
-
+    if (!hapticsEnabled) return;
+    if (typeof navigator === "undefined") return;
+    if (navigator.userActivation && !navigator.userActivation.isActive) return;
+    if (typeof navigator.vibrate === "function") {
         navigator.vibrate(durationMs);
-
     }
-
 }
 
 
