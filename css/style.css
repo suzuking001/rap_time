@@ -1,15 +1,15 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Zen+Kaku+Gothic+New:wght@400;600;700&display=swap");
 
 :root {
-  --bg-1: #f7f4ef;
-  --bg-2: #efe8dd;
-  --bg-3: #f0f3f7;
-  --card: #ffffffd9;
-  --text: #1d1d1b;
-  --muted: #6b625a;
-  --accent: #d97757;
-  --accent-2: #2f7fa7;
-  --border: #00000012;
+  --bg-1: #fbf8f4;
+  --bg-2: #f6efe5;
+  --bg-3: #f5f7fb;
+  --card: #ffffffee;
+  --text: #2a2722;
+  --muted: #7a7066;
+  --accent: #e08a6b;
+  --accent-2: #4aa3c7;
+  --border: #00000010;
 }
 
 *,
@@ -132,11 +132,11 @@ button:disabled {
   padding: 16px 22px;
   border-radius: 16px;
   background: linear-gradient(120deg, var(--accent), var(--accent-2));
-  box-shadow: 0 10px 26px rgba(217, 119, 87, 0.35);
+  box-shadow: 0 10px 26px rgba(224, 138, 107, 0.35);
 }
 
 #lapBtn:active {
-  box-shadow: 0 6px 14px rgba(217, 119, 87, 0.35);
+  box-shadow: 0 6px 14px rgba(224, 138, 107, 0.35);
 }
 
 .section-title {
@@ -177,13 +177,13 @@ button:disabled {
 
 
 #laps .lap-row:nth-child(odd) {
-  background: #fff7ef;
-  border-color: rgba(217, 119, 87, 0.18);
+  background: #fffaf5;
+  border-color: rgba(224, 138, 107, 0.18);
 }
 
 #laps .lap-row:first-child {
-  border-color: rgba(217, 119, 87, 0.45);
-  box-shadow: 0 10px 20px rgba(217, 119, 87, 0.2);
+  border-color: rgba(224, 138, 107, 0.45);
+  box-shadow: 0 10px 20px rgba(224, 138, 107, 0.2);
 }
 
 #laps .lap-index {
